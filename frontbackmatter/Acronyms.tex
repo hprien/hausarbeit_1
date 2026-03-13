@@ -1,0 +1,26 @@
+%*******************************************************
+% Acronyms
+%*******************************************************
+\automark[section]{chapter}
+\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+\refstepcounter{dummy}
+\pdfbookmark[0]{Abbreviations}{Abbreviations}
+\markboth{\spacedlowsmallcaps{Abbreviations}}{\spacedlowsmallcaps{Abbreviations}}
+\chapter*{Abbreviations}
+
+% Insert your acronyms here
+\begin{acronym}[UML]
+  \acro{SDLC}{Software Development Livecycle}
+  \acro{SAST}{Static Application Security Test}
+  \acro{DAST}{Dynamic Application Security Test}
+  \acro{CIA}{Confidentiality Indtegrity Availability}
+  \acro{AI}{Artificial Intelligence}
+  \acro{LLM}{Large Language Model}
+  \acro{CTF}{Capture The Flag}
+  \acro{CLI}{Command Line Interface}
+  \acro{RAG}{Retrieval-augmented generation}
+  \acro{GDPR}{General Data Protection Regulation}
+\end{acronym}
+
+\cleardoublepage
