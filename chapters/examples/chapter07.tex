@@ -7,13 +7,13 @@ Tools like BurpSuite, ZAP and SQLMap already implement partially automated penet
 
 With the rise of \ac{LLM}s into the public more and more research was conducted on leveraging \ac{LLM}s for automated penetration testing. Research revealed that \ac{LLM}s are already capable of performing penetration tests based on their inherit knowledge. Without any technical additions publicly available \ac{LLM}s can conduct penetration tests. By providing an \ac{LLM} with tool usage capabilities the process can be automated nearly entirely. Additional domain specific knowledge provided to the \ac{LLM} improves the process further.
 
+Corporate \ac{LLM} driven penetration testing tools like XBOW are able to find vulnerabilities in corporate tech stacks.
+
 \section{Functional limitations}
 \label{sec:chapter06:limitations}
-\ac{LLM}s are capable of performing penetration tests. However, these tend to show high false positive rates which can only partially be mitigated. Especially noteworthy is that they are often benchmarked with popular deliberately vulnerable applications like DVWA, OWASP Juice Shop and OWASP WebGoat. The vulnerabilities in these applications are widely known and there fore well represented in \ac{LLM}s training data. It may therefore be that \ac{LLM}s perform well at finding vulnerabilities in these webapps.
-
-When it comes to performing penetration tests in proprietary tech stacks or applications built with niche frameworks, automated penetration tests leveraging \ac{LLM}s reach their limits. Tests with proprietary tools like XBOW revealed that even highly sophisticated tools struggle with niche and proprietary tech stacks. In general they are capable of finding issues in real world bug bounty programs though, as tools like XBOW are placed at the top of Hackerone leaderboard. \cite{hackerone_leaderboard} \cite{xbow_hype}
+XBOW's high ranking on the Hackerone leaderboard clearly proves that generally \ac{LLM} powered tools are capable of finding vulnerabilities in real world bug bounty programs. \cite{hackerone_leaderboard} \cite{xbow_hype} When it comes to performing penetration tests in proprietary tech stacks or applications built with niche frameworks, automated penetration tests leveraging \ac{LLM}s reach their limits. Tests with proprietary tools like XBOW revealed that even highly sophisticated tools struggle with niche and proprietary tech stacks. 
 
 
 \section{Future Work}
 \label{sec:chapter06:future_work}
-With an appropriate setup, \ac{LLM}s can conduct end-to-end penetration tests. However, their performance in identifying vulnerabilities remains limited when applied to proprietary or niche technology stacks. Future research should prioritize investigating the underlying causes of these limitations and developing strategies to enhance AI-driven testing in such environments. Additionally, further study is needed to address and mitigate the security challenges associated with these approaches.
+With an appropriate setup, \ac{LLM}s can conduct end-to-end penetration tests. Their vulnerability identification performance remains limited on proprietary or niche technology stacks. Future research should prioritize investigating the underlying causes of these limitations and developing strategies to enhance \ac{AI}-driven testing in corporate environments. Additionally, further further research should be conducted to address and mitigate the security challenges associated with these approaches.
