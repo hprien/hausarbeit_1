@@ -1,6 +1,9 @@
 \chapter{Discussion}
 \label{ch:chapter06}
 
+Corporate networks span hundreds or thousands of hosts. Large corporate networks let Reinforcement Learning approaches reach their limits. The training process of Reinforcement Learning approaches like PenBox requires high fidelity training environments. \cite{Schwartz_2019} 
+Automating the process of penetration testing with \ac{AI} models trained through Reinforcement Learning is rather limited as capabilities of these models often concentrate on exploiting known vulnerabilities through Metasploit. The inability to adopt to dynamically changing environments makes Reinforcement Learning approaches unable to identify complex business logic vulnerabilities and zero-day exploits.
+
 The vulnerabilities that PentestGPT, PentestAgent and ARTEMIS exploited in the benchmarks are nearly all performed based on known vulnerabilities or in controlled and unrealistic test environments. For cooperate vendors especially web application penetration testing is highly interesting. This is because web applications are highly exposed and popular. Especially PentestAgent targets at exploiting known vulnerabilities instead of investigating architecture of web applications to find new vulnerabilities. For finding new vulnerabilities in unknown web applications these tools are not made and tested for.
 
 PentestGPT's performance was evaluated based on 13 \ac{CTF} challenges and PentestAgent's performance based on 11 \ac{CTF} challenges which is even less. The process of choosing these challenges is opaque. PentestGPT was evaluated on hand picket challenges and PentestAgent based on randomly selected once. Both selecting processes can influence the evaluation result.
