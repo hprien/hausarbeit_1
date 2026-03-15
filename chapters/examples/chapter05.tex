@@ -24,6 +24,12 @@ Corporate security experts who used XBOW on proprietary web applications shared 
 
 Software vendors like Google implement \ac{LLM} powered penetration testing tools into software security processes. Google's open-source oss-fuzz for example is a \ac{LLM} powered fuzzing tool that actively found many security flaws in open source software. \cite{Happe_2025}
 
+\section{Security Challenges}
+\label{sec:chapter05:sec_challenges}
+\ac{LLM}s are trained based on a set of data. These data do not encompass the entirety of available information. As not even the entirety of information necessarily represents truth, \ac{LLM}s have inherit bias from their training data. This can lead to unwanted treatment of actual vulnerabilities. A biased \ac{LLM} can potentially overlook vulnerabilities. \cite{Hilario_2024}
+
+In the context of Penetration Testing \ac{LLM}s are often times equipped with tools like web search. Prompts can be injected into the \ac{LLM}'s context through the access of third party webpages. In the combination with the \ac{LLM} holding confidential data, the risk of leaking these information to a third party webpage rises.
+
 % end of curl bug bounty
 % c vulnerabilities hard to find
 % xbow findings nochmal genau angucken und einordnen

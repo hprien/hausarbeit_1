@@ -17,13 +17,6 @@ By providing the \ac{LLM} with tool usage capabilities this process can be autom
 When it comes to performing Penetration Tests in proprietary tech stacks or applications built with niche frameworks, automated Penetration Tests leveraging \ac{LLM}s reach their limits. Tests with proprietary tools like XBOW revealed that even highly sophisticated tools struggle with niche and proprietary tech stacks. In general they are capable of finding issues in real world bug bounty programs though, as tools like XBOW are placed at the top of Hackerone leaderboard. \cite{hackerone_leaderboard} \cite{xbow_hype}
 
 
-\section{Security Challenges}
-\label{sec:chapter06:sec_challenges}
-\ac{LLM}s are trained based on a set of data. These data do not encompass the entirety of available information. As not even the entirety of information necessarily represents truth, \ac{LLM}s have inherit bias from their training data. This can lead to unwanted treatment of actual vulnerabilities like overlook. \cite{Hilario_2024}
-
-In the context of Penetration Testing \ac{LLM}s are often times equipped with tools like web search. Prompts can be injected into the \ac{LLM}'s context through the access of third party webpages. In the combination with the \ac{LLM} holding confidential data, the risk of leaking these information to a third party webpage rises.
-
-
 \section{Future Work}
 \label{sec:chapter06:future_work}
 With an appropriate setup, \ac{LLM}s can conduct end-to-end penetration tests. However, their performance in identifying vulnerabilities remains limited when applied to proprietary or niche technology stacks. Future research should prioritize investigating the underlying causes of these limitations and developing strategies to enhance AI-driven testing in such environments. Additionally, further study is needed to address and mitigate the security challenges associated with these approaches.
