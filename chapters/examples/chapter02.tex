@@ -1,35 +1,12 @@
 \chapter{State of Research and related Work}
-% Foundation and Related Work
 \label{ch:foundations_related_work}
 
-%
-% Section: Definitions
-%
-%\section{Definitions}
-%\label{sec:background:Definitions}
-% todo
-%software security \cite{Khan_2021}
-%penetration testing
+\noindent Penetration tests can be performed with three different knowledge levels: Black-Box penetration testing means that the penetration tester has no internal knowledge of the system under test. White-Box Testing means the Tester has complete knowledge of the internals and Grey-Box refers to partial knowledge of internal structures. \cite{Rane_2024}
 
-% \begin{description}
-%   \item[Description-Label Test:] Illo secundo continentes sia il, sia russo distinguer se. Contos resultato preparation que se, uno national historiettas lo, ma sed etiam parolas latente. Ma unic quales sia. Pan in patre altere summario, le pro latino resultato.
-%   \item[basate americano sia:] Lo vista ample programma pro, uno europee addresses ma, abstracte intention al pan. Nos duce infra publicava le. Es que historia encyclopedia, sed terra celos avantiate in. Su pro effortio appellate, o.
-%   \item[Cras venenatis:] Purus et posuere lacinia, nisl sapien dapibus metus, a ornare enim odio in ipsum. Quisque imperdiet nibh metus, in fringilla tellus. Duis varius dui eget orci commodo ac sollicitudin est placerat. Cras varius tincidunt arcu, quis imperdiet nibh rhoncus vel. Sed non justo orci, non accumsan felis. Maecenas condimentum convallis. 
-% \end{description}
+Tools like BurpSuite, ZAP and SQLMap already implement automated penetration testing techniques through signature-driven \ac{DAST} scanning approaches. These scanners systematically map web applications, fuzz parameters with curated payloads, and detect injection vulnerabilities like XSS, SQLi, and command injection. However, these approaches are fundamentally constrained by their pattern-matching limitations that prevent the contextual reasoning, multi-step exploitation chains, and novel attack creativity required to identify complex business logic vulnerabilities and zero-day exploits. \cite{Osman_2025}
 
-%
-% Section: State of Research and related Work
-%
-%\section{State of Research and related Work}
-%\label{sec:background:state_of_research}
-This term paper is partially based on research papers that are still in pre-print or have not received much attention yet because they have been published recently. As the technology of \ac{AI} and especially \ac{LLM}s is still evolving and heavily underlies broad attention, some aspects might change and evolve in future.\\
+Earlier approaches to automate the process of penetration testing leveraged \ac{AI} models trained through Reinforcement Learning \cite{Confido_2022}. Training environments for these models need to be high fidelity which makes the models inflexible. The lack of flexibility brought up difficulties scaling \ac{AI} models trained through Reinforcement Learning to an production ready state. \cite{Schwartz_2019}
 
-\noindent There are three main differences regarding the knowledge based on which the penetration test is performed. Black-, Gray- and White-Box penetration testing. Black-Box penetration testing means that the penetration tester has no internal knowledge about the System Under Test. White-Box Testing means the Tester has complete knowledge of the internals and Grey-Box refers to partial knowledge of internal structures. \cite{Rane_2024}
+Leveraging \ac{LLM}s for penetration testing shows better results and scalability. \ac{LLM}s are able to apply attach patterns to applications more flexible. The project PentestGPT describes an agentic approach for orchestrating \ac{LLM}s beneficially which further increases the performance. \cite{Deng_2024}
 
-Traditional penetration testing tooling already implemented various automation to support penetration testers \cite{Osman_2025}.
-
-Earlier approaches to automate the process of penetration testing leveraged Reenforcement Learning \cite{Confido_2022}. However scaling these approaches to an production ready state brought up difficulties \cite{Schwartz_2019}.
-
-Leveraging \ac{LLM}s for penetration testing shows better results and scalability. The project PentestGPT also describes an agentic approach for orchestrating \ac{LLM}s beneficially. \cite{Deng_2024}
-
-Multiple tools already implement \ac{AI} for penetration testing to support human penetration testers \cite{Kozlovska_2025}.
+Few research has been conducted on the ability of \ac{LLM}s to automatically perform penetration tests on corporate and proprietary applications. This term paper will investigate whether \ac{LLM}s are able to perform automated penetration tests in corporate environments.
