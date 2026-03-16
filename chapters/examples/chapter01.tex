@@ -1,17 +1,17 @@
 \chapter{Introduction}
 \label{ch:intro}
-Wide ranges of day-to-day life rely on software. Communication technologies, payment services as well as health systems all rely on software. Failure, unavailability or data leaks in such crucial services may lead to severe harm or even death to human. The society has a great indirect interest in software security as it heavily relies on digital infrastructure. \cite{Wilson_2020}
+Software is integral to wide-ranging aspects of daily life, underpinning communication technologies, payment services, and health systems. Failures, unavailability, or data leaks in these crucial services can lead to severe harm or even death. Consequently, society has a significant indirect interest in software security due to its heavy reliance on digital infrastructure. \cite{Wilson_2020}
 
-Not only the society but also software vendors have multiple interests in providing secure software. On the one hand, companies financially benefit from the voluntary disclosure of security measures they took. For example their market value is influenced in a positive way by this disclosure. This is due to more transparency and proactive actions. \cite{Gordon_2010}
+Beyond societal concerns, software vendors also have compelling interests in providing secure software. On the one hand, companies can financially benefit from voluntarily disclosing their security measures. This transparency and proactive approach can positively influence their market value. \cite{Gordon_2010}
 
-On the other hand, software vendors must comply with several laws and regulations regarding data protection \cite{GDPR}. Penalties in form of "fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 \% of the total worldwide annual turnover" \cite{GDPR} threaten to break these laws.
+On the other hand, software vendors are mandated to comply with various data protection laws and regulations. Non-compliance can result in severe penalties, including fines of up to 20,000,000€ limited to 4\% of their total worldwide annual turnover. \cite{GDPR}
 
 %
 % Section: Problem Statement
 %
 \section{Problem Statement}
 \label{sec:intro:problem_statement}
-These needs of cyber security need to be satisfied while surrounded by a dynamically and fast evolving threat landscape. State and non-state actors drive a wide and diverse landscape of cyber security threats. "Supply chain attacks, advanced persistent threats, ransomware, and vulnerabilities on the Internet of Things" \cite{Adeyeri_2024} are just some cyber security threats modern systems face. Thus developing and maintaining software systems securely and protecting them from any harm through cyber criminals gets harder ever since.
+These needs of cyber security need to be satisfied while surrounded by a dynamically and fast evolving threat landscape. State and non-state actors drive a wide and diverse landscape of cyber security threats. Supply chain attacks, advanced persistent threats and vulnerabilities on the Internet of Things are just some cyber security threats modern systems face. \cite{Adeyeri_2024} Thus developing and maintaining software systems securely and protecting them from any harm through cyber criminals gets harder ever since.
 
 %
 % Section: Goal of research
@@ -21,20 +21,18 @@ These needs of cyber security need to be satisfied while surrounded by a dynamic
 % todo: quellen mit 3 measures of software security alignen
 To address these growing difficulties of securing software systems, corporate vendors and developers can apply several security measures.
 
-The \ac{SDLC} describes multiple steps in which the development of secure software can be split up. One central part of the development of secure software is testing. \cite{McGraw_2004} A highly effective approach of software testing is Penetration Testing \cite{Lachkov_2022}. Penetration Testing used to be a manual and creative approach of dynamically testing for security vulnerabilities in software. However, traditional thus manual methods of Penetration Testing are no longer sufficient to keep track of fast evolving threat landscapes and ever growing software systems. This raises the need of automating and speeding up Penetration Testing. \cite{Stefinko_2024}
+The \ac{SDLC} describes multiple steps in which the development of secure software can be split up. One central part of the development of secure software is testing. \cite{McGraw_2004} A highly effective approach of software testing is penetration testing \cite{Lachkov_2022}. Penetration testing used to be a manual and creative approach of dynamically testing for security vulnerabilities in software. However, traditional thus manual methods of penetration testing are no longer sufficient to keep track of fast evolving threat landscapes and ever growing software systems. This raises the need of automating and speeding up penetration testing. \cite{Stefinko_2024}
 
-This term paper will discuss how \ac{AI}-driven systems can support penetration testers. It will also discuss to which degree Penetration Testing already can be automate and thus help Penetration Testers to focus of more advances research and testing.
+This term paper will discuss how \ac{AI}-driven systems can support penetration testers. It will also discuss to which degree penetration testing already can be automate and thus help penetration testers to focus of more advances research and testing.
 
 %
 % Section: Research Question
 %
 \section{Research Question and Hypotheses}
 \label{sec:intro:research_question}
-The central research question addressed in this term paper is following:
+The central research question addressed in this term paper is following: RQ: Are \ac{LLM}s capable of performing automated penetration tests in corporate environments?\\
 
-How do \ac{AI}-powered tools improve and automate the process of software penetration testing and which risks come with it?\\
-
-\noindent The Hypotheses to answer this question is that \ac{LLM}s are capable of performing Penetration Tests when they are provided with sufficient resources. These systems are not capable of performing end-to-end penetration testing without a human in the loop. Hallucination of \ac{LLM}s lead to false positives.
+\noindent The hypotheses to answer this question is following: H: \ac{LLM}s are capable of performing automated penetration tests on corporate and proprietary applications.
 
 %
 % Section: Structure
@@ -43,7 +41,7 @@ How do \ac{AI}-powered tools improve and automate the process of software penetr
 \label{sec:intro:structure}
 First of all, a foundation will be built up to give the content of this term paper a context. This will be done my the definition of important and related terms. Following, related historic approaches as well as related work will be presented in the context of the research question.
 
-The main content of this term paper will consist of tree parts. To emphasize the role of Penetration Testing in secure software development, the first step will be to differentiate between measures of software security. Second step to answer the research question will be the introduction to Penetration Testing. Followed by third, taking a look at \ac{AI}-driven Penetration Testing.
+The main content of this term paper will consist of tree parts. To emphasize the role of penetration testing in secure software development, the first step will be to differentiate between measures of software security. Second step to answer the research question will be the introduction to penetration testing. Followed by third, taking a look at \ac{AI}-driven penetration testing.
 
 In the conclusion all information will be summarized and related to each other. In this part also the research question will be answered based on the findings.
 
@@ -53,8 +51,8 @@ In the conclusion all information will be summarized and related to each other. 
 %
 \section{Methodology}
 \label{sec:intro:methodology}
-A literature review will discuss past and ongoing research on the automation of Penetration Testing. Capabilities of earlier solutions will be compared to the current state of research.
+A literature review will discuss past and ongoing research on the automation of penetration testing. Capabilities of earlier solutions will be compared to the current state of research.
 
-The usage of \ac{LLM}s for automated Penetration Testing currently evolves fast. This is why special attention will be drawn to security experts' reports of experience. As these experts actually working with these tools and thus know their capabilities. This will ensure to cover the most recent evolutions in the field of automated Penetration Testing.
+The usage of \ac{LLM}s for automated penetration testing currently evolves fast. This is why special attention will be drawn to security experts' reports of experience. As these experts actually working with these tools and thus know their capabilities. This will ensure to cover the most recent evolutions in the field of automated penetration testing.
 
 Based on the literature review, attention will also be drawn to security challenges and the need of future work.

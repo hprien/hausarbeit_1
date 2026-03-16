@@ -1,29 +1,17 @@
-\chapter{Conclusion and Outlook}
+\chapter{Discussion}
 \label{ch:chapter06}
 
-\section{This is possible}
-\label{sec:chapter06:possible}
-Before capable \ac{LLM}s were widely available and common, \ac{AI} Models trained through Reinforcement Learning were leveraged for Penetration Testing. Several Penetration Testing and Security Tools implemented these technique to support human testers. However to compete with human Penetration Testers these tools lack creativity and flexibility to adopt to real world Systems Under Test. For example, \ac{AI} models trained with Reinforcement Learning are useful when it comes to classification of a webapp's input fields. This classification can then be used to insert specific test requests for specific fields. This however is still quite static and doesn't address specifics of a given webapp.
+Corporate networks span hundreds or thousands of hosts. Large corporate networks let Reinforcement Learning approaches reach their limits. The training process of Reinforcement Learning approaches like PenBox requires high fidelity training environments. \cite{Schwartz_2019} 
+Automating the process of penetration testing with \ac{AI} models trained through Reinforcement Learning is rather limited as capabilities of these models often concentrate on exploiting known vulnerabilities through Metasploit. The inability to adopt to dynamically changing environments makes Reinforcement Learning approaches unable to identify complex business logic vulnerabilities and zero-day exploits.
 
-With the rise of \ac{LLM}s into the public more and more research was conducted on leveraging \ac{LLM}s for automated Penetration Testing. Research revealed that already the inherit knowledge of a \ac{LLM} is capable of performing Penetration Tests. Penetration Testing with these is as simple as asking a publicly available \ac{LLM} like Mistral, Kimi-k or GPT to assist. The user then has to execute what the \ac{LLM} suggests to do. For example executing a \ac{CLI} command or opening a browser window.
+The vulnerabilities that PentestGPT, PentestAgent and ARTEMIS exploited in the benchmarks are nearly all performed based on known vulnerabilities or in controlled and unrealistic test environments. For cooperate vendors especially web application penetration testing is highly interesting. This is because web applications are highly exposed and popular. Especially PentestAgent targets at exploiting known vulnerabilities instead of investigating architecture of web applications to find new vulnerabilities. For finding new vulnerabilities in unknown web applications these tools are not made and tested for.
 
-By providing the \ac{LLM} with tool usage capabilities this process can be automated further. Also the inherit knowledge of the \ac{LLM} can be extended with external sources like Vulnerability Databases. With this it is possible to build fully automated Penetration Testing agents that actually find vulnerabilities.
+PentestGPT's performance was evaluated based on 13 \ac{CTF} challenges and PentestAgent's performance based on 11 \ac{CTF} challenges which is even less. The process of choosing these challenges is opaque. PentestGPT was evaluated on hand picket challenges and PentestAgent based on randomly selected once. Both selecting processes can influence the evaluation result.
 
+Corporate \ac{LLM} driven penetration testing tools like XBOW and oss-fuzz clearly show that \ac{LLM}s are capable of finding security vulnerabilities in corporate software.
 
-\section{Functional limitations}
-\label{sec:chapter06:limitations}
-\ac{LLM}s are capable of performing Penetration. However, these tend to show high false positive rates which can only partially be mitigated. Especially noteworthy is that they are often benchmarked with popular deliberately vulnerable applications like DVWA, OWASP Juice Shop and OWASP WebGoat. The vulnerabilities in these applications are widely known and there fore well represented in \ac{LLM}s training data. It may therefore be that \ac{LLM}s perform well at finding vulnerabilities in these webapps.
+When it comes to proprietary technology stacks that may even use niche frameworks XBOW reaches it's limits digging deep enough into the inner workings of proprietary code bases. The security expert who conducted tests on XBOW conclude that XBOW lacks the capability of lateral movement required to thoroughly investigate the working principles of the applications under test. This effect is also observable in ARTEMIS's evaluation.
 
-When it comes to performing Penetration Tests in proprietary tech stacks or applications built with niche frameworks, automated Penetration Tests leveraging \ac{LLM}s reach their limits. Tests with proprietary tools like XBOW revealed that even highly sophisticated tools struggle with niche and proprietary tech stacks. In general they are capable of finding issues in real world bug bounty programs though, as tools like XBOW are placed at the top of Hackerone leaderboard. \cite{hackerone_leaderboard} \cite{xbow_hype}
-
-
-\section{Security Challenges}
-\label{sec:chapter06:sec_challenges}
-\ac{LLM}s are trained based on a set of data. These data do not encompass the entirety of available information. As not even the entirety of information necessarily represents truth, \ac{LLM}s have inherit bias from their training data. This can lead to unwanted treatment of actual vulnerabilities like overlook. \cite{Hilario_2024}
-
-In the context of Penetration Testing \ac{LLM}s are often times equipped with tools like web search. Prompts can be injected into the \ac{LLM}'s context through the access of third party webpages. In the combination with the \ac{LLM} holding confidential data, the risk of leaking these information to a third party webpage rises.
-
-
-\section{Future Work}
-\label{sec:chapter06:future_work}
-With an appropriate setup, \ac{LLM}s can conduct end-to-end penetration tests. However, their performance in identifying vulnerabilities remains limited when applied to proprietary or niche technology stacks. Future research should prioritize investigating the underlying causes of these limitations and developing strategies to enhance AI-driven testing in such environments. Additionally, further study is needed to address and mitigate the security challenges associated with these approaches.
+% end of curl bug bounty
+% c vulnerabilities hard to find
+% xbow findings nochmal genau angucken und einordnen
